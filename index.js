@@ -30,4 +30,9 @@ app.post('/cadastrar', (req, res) => {
   // Enviar uma resposta para o navegador
   res.send('Cadastro recebido com sucesso!');
 
-})
+});
+
+// Inicia o servidor
+app.listen(port, () => {
+  console.log(`Servidor rodando em http://localhost:${port}`);
+});
