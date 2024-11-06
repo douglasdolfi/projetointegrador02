@@ -1,6 +1,18 @@
-const express = require('express');
+// index.js
+import express from 'express'
+
+const app = express()
+const PORT = 4000
+
+app.listen(PORT, () => {
+  console.log(`API listening on PORT ${PORT}`);
+});
+
+//const express = require('express');
 const app = express();
-const port = 3000;
+
+
+
 
 // Configura o Express para ler dados do formulário
 app.use(express.urlencoded({ extended: true }));
