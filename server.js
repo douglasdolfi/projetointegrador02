@@ -9,7 +9,6 @@ app.listen(PORT, () => {
 });
 
 //const express = require('express');
-const app = express();
 
 
 
