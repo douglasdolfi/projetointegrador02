@@ -9,7 +9,8 @@ app.listen(PORT, () => {
 });
 
 app.get('/',(req,res) => {
-	res.send('Nossa API está funcionando!')
+	//res.send('Nossa API está funcionando!')
+	res.sendFile(__dirname + '/public/index.html');
 })
 
 // Configura o Express para ler dados do formulário
