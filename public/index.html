@@ -9,6 +9,32 @@
 <body>
     <h1>Bem-vindo ao Meu Projeto!</h1>
     <button onclick="mostrarMensagem()">Clique aqui</button>
+
+    <form action="/cadastrar" method="post"> 
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control" id="nome" name="nome" required><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" class="form-control" id="idade" name="idade" required><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" class="form-control" id="endereco" name="endereco" required><br>
+
+        <label for="ministerios">Ministérios:</label>
+        <input type="text" class="form-control" id="ministerios" name="ministerios"><br>
+
+        <label for="quantidade_filhos">Quantidade de Filhos:</label>
+        <input type="number" class="form-control" id="quantidade_filhos" name="quantidade_filhos"><br>
+
+        <label for="nome_filhos">Nome dos Filhos (separados por vírgula):</label>
+        <input type="text" class="form-control" id="nome_filhos" name="nome_filhos"><br>
+
+        <label for="sugestoes">Sugestões:</label>
+        <textarea id="sugestoes" class="form-control" name="sugestoes"></textarea><br>
+
+        <input type="submit" class="btn btn-primary" value="Cadastrar">
+    </form>
+
     <script src="js/script.js"></script>
 </body>
 </html>
